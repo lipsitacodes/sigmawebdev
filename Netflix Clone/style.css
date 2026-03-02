@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-    background-image: url("Assets/Images/bg.jpg");
+    background-image: url("Assets/Images/bg1.jpg");
     background-position: center center;
     background-size: max(1200px, 100px);
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ nav button {
 }
 
 .btn-red {
-    font-weight: bold;
+    font-weight: 400px;
     background-color: red;
     color: white;
     padding: 11px 24px;
@@ -128,6 +128,7 @@ nav button {
     padding: 9px 24px;
     border-radius: 4px;
     font-size: 20px;
+    color: white;
     background-color: rgba(23, 23, 23, 0.8);
     border: 2px solid white;
 }
@@ -147,9 +148,104 @@ nav button {
     flex-direction: row;
     gap: 19px;
 }
+
 .top-nav-left {
     display: flex;
     flex-direction: row;
     gap: 13px;
     padding-top: 20px;
+}
+
+
+.first {
+    padding: 665px 13vw;
+    background-color: black;
+}
+
+.top h2 {
+    color: white;
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+}
+
+/* Horizontal scroll row */
+.movies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 4px;
+
+}
+
+.movies::-webkit-scrollbar {
+    display: none;
+}
+
+/* Movie cards */
+.movies span {
+      position: relative;
+    min-width: 160px;
+    height: 269px;
+    width: 187px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+.img1 {
+    background-image: url("https://occ-0-2085-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYWfklg5D5btQoekHBjGHSFXDW_EezXrT97RnSaEwirkVnCt91QaQlcPWCxtfkSrW04hOcHguRrAMgyKTJzs2_PKkFkbs60DHC4.webp?r=05f");
+}
+
+.img2 {
+    background-image: url("https://occ-0-2085-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTk_B0l_BvDJ7CQuWOAax9ZKSAe65vFGUMjAee8pcvuYXDFDvcnFaF8nOEuwxBg-TFKzHTqhdD3D7zlMsXSpA_BQTHf-ouBVNdwJIJvNQzUGje4WVrnptKL5Ywqu9hV7pg3A.webp?r=f34");
+}
+
+.img3 {
+    background-image: url("https://occ-0-2085-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUWVF3ygMbBOZVkHcWyoVeNIuiag2c7kN7Vwlq6MqimdeYIdheTG7QlcRFQnAoqn_bTNsV4LSEYUdmtkIF-xf8gEgVBwC-ZKGUdcrhIvxdMCaOtEqdp51EVuSP8g8QXO7uLO.webp?r=4ab");
+}
+
+.img4 {
+    background-image: url("https://occ-0-2085-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVbXUoTNkiWeGLsVtY9HIcuwl1a3-qGoR3UlqNqTqNaSBIYjd0DYeSO0mJcKaiMaH4AYtFRuqnHeuwcxSB3sofkfoh_zn_c9A80.webp?r=0e8");
+}
+
+.img5 {
+    background-image: url("https://occ-0-2085-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABc207nlnlHas2ih2KCtmvfXI7r25QFfoZ3iiLd3EEskxt_aOnRK6Le24iHHZSgtJ1xZWjCVjR3x6X6DK1sp7UFSY79GreZAZF6k.webp?r=73b");
+}
+
+/* More reasons section */
+.middle h2 {
+    color: white;
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+}
+
+/* cards container */
+.reasons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* individual cards */
+.reasons div {
+    width: 300px;
+    min-width: 300px;
+    height: 195px;
+    padding: 24px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #201f43, #221623);
+    color: #cfcfcf;
+    position: relative;
+}
+
+/* card headings */
+.reasons h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
