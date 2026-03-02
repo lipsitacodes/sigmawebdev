@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-     box-sizing: border-box;
+    box-sizing: border-box;
 
 }
 
@@ -74,8 +74,7 @@ nav button {
 }
 
 .hero> :nth-child(1) {
-    font-size: 2.9rem;
-    font-weight: 700px;
+    font-size: 56px;
     margin-bottom: 0.5rem;
     max-width: 600px;
     text-align: center;
@@ -91,19 +90,20 @@ nav button {
 
 .hero> :nth-child(3) {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
 
 }
 
 .separation {
-  height: 8px;
+    height: 8px;
     background-color: #232323;
     opacity: 1;
 }
 
 .btn-red {
-    font-weight: 400px;
+    display: flex;
+    align-items: center;
     background-color: red;
     color: white;
     padding: 11px 24px;
@@ -125,14 +125,34 @@ nav button {
 }
 
 .main input {
-    padding: 9px 24px;
+    padding: 9px 118px;
+    padding-left: 30px;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     background-color: rgba(23, 23, 23, 0.8);
     border: 2px solid white;
+    text-align: left;
 }
-
+ .faq .input1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center
+}
+.input1 input {
+       top: 23px;
+    padding: 23px 252px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 2px solid white;
+    text-align: left;
+    padding-left: 17px;
+}
+.input1{
+    margin-bottom: 23px;
+}
 .btn-red-sm {
     cursor: pointer;
     background-color: red;
@@ -147,8 +167,16 @@ nav button {
     display: flex;
     flex-direction: row;
     gap: 19px;
+    height: 30px;
+    height: 48px;
 }
-
+.input1 {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    height: 30px;
+    height: 48px;
+}
 .top-nav-left {
     display: flex;
     flex-direction: row;
@@ -158,7 +186,7 @@ nav button {
 
 
 .first {
-       padding: 60px 13vw 31px 13vw;
+    padding: 60px 13vw 31px 13vw;
     background-color: black;
 }
 
@@ -235,10 +263,12 @@ nav button {
 
 /* individual cards */
 .reasons div {
-  
 
-     flex: 1 1 250px;   /* responsive base width */
-    max-width: 300px;  /* desktop pe ek size */
+
+    flex: 1 1 250px;
+    /* responsive base width */
+    max-width: 300px;
+    /* desktop pe ek size */
     min-height: 195px;
     height: auto;
     padding: 16px;
@@ -278,4 +308,14 @@ nav button {
     display: flex;
     justify-content: flex-start;
     padding-left: 203px;
+}
+
+.faqbox:hover {
+    background-color: rgb(67, 67, 67);
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
