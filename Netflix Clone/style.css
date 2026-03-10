@@ -313,7 +313,6 @@ nav button {
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    padding-left: 203px;
 }
 
 .faqbox:hover {
@@ -326,14 +325,15 @@ nav button {
     padding: 20px 0;
 }
 
-footer{
+footer {
     color: white;
-      max-width: 60vw;
+    max-width: 80vw;
     margin: auto;
 }
+
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     color: white;
     gap: 23px;
 }
@@ -341,7 +341,14 @@ footer{
 .footer-items {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 13px;
 
+}
+
+footer div {
+
+    padding-top: 13px;
 }
 
 .footer a {
