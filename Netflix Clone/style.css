@@ -12,18 +12,20 @@
 
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
 
 }
 
-.main {
+.main{
     background-image: url("Assets/Images/bg1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 644px;
+    min-height: 644px;
     width: 100%;
     position: relative;
-
+    margin: auto;
 }
 
 .main .box {
@@ -70,6 +72,9 @@ nav button {
     position: relative;
     gap: 23px;
     padding: 0px 30px;
+    text-align: center;
+    margin: auto;
+    max-width: 80vw;
 
 }
 
@@ -125,8 +130,7 @@ nav button {
 }
 
 .main input {
-    padding: 9px 118px;
-    padding-left: 30px;
+    padding: 12px 20px;
     border-radius: 4px;
     font-size: 16px;
     color: white;
@@ -143,7 +147,7 @@ nav button {
 
 .input1 input {
     top: 23px;
-    padding: 23px 252px;
+    padding: 12px 20px;
     border-radius: 4px;
     font-size: 16px;
     color: white;
@@ -171,7 +175,6 @@ nav button {
     display: flex;
     flex-direction: row;
     gap: 19px;
-    height: 30px;
     height: 48px;
 }
 
@@ -179,7 +182,6 @@ nav button {
     display: flex;
     flex-direction: row;
     gap: 19px;
-    height: 30px;
     height: 48px;
 }
 
@@ -192,8 +194,14 @@ nav button {
 
 
 .first {
-    padding: 60px 13vw 31px 13vw;
+   padding: 60px 8vw;
     background-color: black;
+}
+
+@media screen and (max-width: 1300px) {
+    .first{
+        flex-wrap: wrap;
+    }
 }
 
 .top h2 {
@@ -228,8 +236,6 @@ nav button {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-
-
 
 .img1 {
     background-image: url("https://occ-0-2085-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYWfklg5D5btQoekHBjGHSFXDW_EezXrT97RnSaEwirkVnCt91QaQlcPWCxtfkSrW04hOcHguRrAMgyKTJzs2_PKkFkbs60DHC4.webp?r=05f");
@@ -270,11 +276,8 @@ nav button {
 /* individual cards */
 .reasons div {
 
-
     flex: 1 1 250px;
-    /* responsive base width */
     max-width: 300px;
-    /* desktop pe ek size */
     min-height: 195px;
     height: auto;
     padding: 16px;
@@ -310,9 +313,9 @@ nav button {
 }
 
 .faq h2 {
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
+    text-align: center;
+    margin: auto;
+    max-width: 73vw;
 }
 
 .faqbox:hover {
