@@ -24,4 +24,6 @@ console.log(b.replace("ll","45"));
 
 let x = "Lipsita ";
 let y = "Khadgarai";
-console.log(x.concat(y," PKD"));
+console.log(x.concat(y,"PKD"));
+console.log(x.startsWith("Hello"));
+console.log(x.endsWith("a"));
