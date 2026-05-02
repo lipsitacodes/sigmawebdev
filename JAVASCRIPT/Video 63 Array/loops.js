@@ -60,3 +60,7 @@ const red = (a,b) =>{
     return a*b;
 }
 console.log(arr2.reduce(red)); //3*4*6*5*2*1 = 720
+
+let str = "Lipsita";
+str = Array.from(str);
+console.log(str);
