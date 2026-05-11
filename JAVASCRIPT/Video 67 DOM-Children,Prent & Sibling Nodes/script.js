@@ -1,0 +1,14 @@
+console.log("Hello World");
+let cont = document.body.childNodes[1];
+console.log(cont);
+console.log(document.body.children[1].childNodes);
+console.log(cont.firstChild);
+console.log(cont.firstElementChild);
+console.log(cont.firstElementChild.parentElement);
+console.log(cont.lastElementChild);
+cont.lastElementChild.style.color = "red";
+cont.lastElementChild.style.backgroundColor = "pink";
+console.log(cont.firstElementChild.nextElementSibling);
+console.log(document.body.firstElementChild.children[3].nextElementSibling);
+console.log(document.body.firstElementChild.children[3].previousElementSibling);
+console.log(document.body.firstElementChild.children[3].previousSibling);
