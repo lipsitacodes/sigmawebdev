@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion</title>
+    <style>
+        .red {
+            color: rgb(255, 255, 255);
+            background-color: rgb(230, 173, 173);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box">Hey i am
+            not box overhere !</div>
+        <div class="box">Hey i am a box overhere !</div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = " I have inserted by <b>Lipsita</b> using <b>JavaScript</b>";
+        // div.setAttribute("class", "created");
+        // document.querySelector(".container").prepend(div);
+        let cont = document.querySelector(".container");
+        let b = document.querySelector(".box");
+
+        cont.insertAdjacentHTML("beforeend", "<b>I am under the water please help me out because i am sinking in water help me lord please help me!!</b>");
+
+        b.insertAdjacentText("afterbegin", "I am above the water please help me out because i am flying in air help me lord please help me!!");
+
+        b.insertAdjacentElement("afterend", document.querySelector(".box"));
+
+        // b.remove();
+        // b.remove();
+        // cont.remove();  
+        console.log(cont.classList);
+        console.log(cont.className);
+        cont.classList.add("Lipsita");
+       
+        cont.classList.toggle("red");
+
+    </script>
+</body>
+
+</html>
