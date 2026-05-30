@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge 13</title>
     <style>
+        body{
+            background-color: #151313f1;
+            font-family: 'Roboto', sans-serif;
+        }
+        .text{
+            color : white;
+        }
         .card {
             display: flex;
             border: 2px solid black;
             width: 900px;
-            height: 115px;
+            height: 106px;
             justify-content: center;
             align-items: center;
+            background-color: black;
+            padding: 9px;
+            margin: 3px;
 
         }
-        .img img {
+        .image img {
             width: 200px;
         }
         .text h1{
@@ -25,21 +35,30 @@
             padding: 1px 0px;
             margin: 5px;
         }
+        .image {
+            position: relative;
+        }
+        .capsul {
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.7;    
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;      
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="img">
-                <img src="https://i.ytimg.com/vi/aQn7ssqHYp4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBMDIjSAwcFLvqpvykodYCJ4m5_3g" alt="">
-            </div>
-            <div class="text">
-                <h1>JavaScript try catch &amp; Error Handling | Sigma Web Development Course - Tutorial #79</h1>
-                <p>156K views.2 years ago</p>
-            </div>
-        </div>
-    </div>
+   <body>
+    <div class="container"></div>
+
     <script type="module" src="script.js"></script>
 </body>
 
