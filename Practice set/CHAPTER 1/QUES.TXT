@@ -1,0 +1,5 @@
+Create s variable of type sting and try to add a numter to it
+Use typeof operator to find the datatype of the stung in last question
+Create a const object in javascript Can you changit to hold a number later
+Try to add a newe key to the const object in Problem 3. Were you able to do it?
+Write a js program to create a word-meaning dictionary of 5 words

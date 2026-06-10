@@ -1,0 +1,6 @@
+use logical operator to find whether the age of A perion lies between 10 and 20?
+Demonstrate the use of swith case statment
+in Javascript
+Write a Java Script program to find whether a
+number is Divisible by 2 and 3
+Print You can Drive or You cannot Drive on agе age being greater than using ternary operator
