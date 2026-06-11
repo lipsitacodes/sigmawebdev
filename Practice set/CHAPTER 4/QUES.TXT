@@ -1,0 +1,7 @@
+What will the following print in Javascript
+Console.log (" har\"". leng th)
+Expore the includes, startsWith & endsWith functions of a string
+Write a program to convert a given String into lowercase
+Extract the amount out of this sring
+" Please give Rs 1000"
+Try to Change 4" charactes of a given string Will you eble to do it
