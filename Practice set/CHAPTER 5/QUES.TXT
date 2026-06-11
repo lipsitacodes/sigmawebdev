@@ -1,6 +1,6 @@
-Write a program to print the marks of a student in an object using for loop
-obj = {Lipsita:98,Harry : 98,Loshit:92}
-write a the program in Q1 using for in loop
-
-write a program to print "try again" until the user enters the correct number
-wrtie a function to find mean of 5 number
+create an array of numbers and take input from the user to add numbers to the array 
+keep adding number to the array in above question untill 0 is added to it
+filter for numbers divisible by 10 from  Given array
+Create an aray of squsre of given numbers
+Use reduce to calculate factorial of a given
+number from an array of first n natural numbers (n being the nunber whose factorial needs to be calculated)
