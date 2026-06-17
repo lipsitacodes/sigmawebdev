@@ -1,6 +1,5 @@
 function login(containerClass, heading, inp1, inp2, btnText) {
-
-    const loginHtml = `
+  const loginHtml = `
     <div class="${containerClass}">
         <div class="login">
             <h1>${heading}</h1>
@@ -11,72 +10,57 @@ function login(containerClass, heading, inp1, inp2, btnText) {
     </div>
     `;
 
-    document.body.innerHTML += loginHtml;
+  document.body.insertAdjacentHTML("beforeend", loginHtml);
 
-    const button = document.querySelector(".login-button");
+  const button = document.querySelector(`.${containerClass} .login-button`);
 
-    button.addEventListener("click", async () => {
+  button.addEventListener("click", async () => {
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
 
-        const username = document.getElementById("username").value;
-        const email = document.getElementById("email").value;
-
-        document.body.innerHTML += `
-            <div class="terminal"></div>
-        `;
-
-        await startHack(username, email);
-    });
+    document.body.innerHTML = `
+    <div class="terminal"></div>`;
+    await startHack(username, email);
+  });
 }
 
 function waitRandom() {
+  const delay = Math.floor(Math.random() * 2000) + 1000;
 
-    const delay = Math.floor(Math.random() * 6000) + 1000;
-
-    return new Promise((resolve) => {
-        setTimeout(resolve, delay);
-    });
+  return new Promise((resolve) => {
+    setTimeout(resolve, delay);
+  });
 }
 
 async function startHack(username, email) {
+  const terminal = document.querySelector(".terminal");
 
-    const terminal = document.querySelector(".terminal");
+  const messages = [
+    "Initializing Hacking",
+    `Reading files of ${username}`,
+    `Email detected: ${email}`,
+    "Password file detected",
+    "Sending all passwords and personal files to server",
+    "Hacking complete",
+  ];
 
-    const messages = [
-        "Initializing Hacking",
-        `Reading files of ${username}`,
-        `Email detected: ${email}`,
-        "Password file detected",
-        "Sending all passwords and personal files to server",
-        "Hacking complete"
-    ];
+  for (const msg of messages) {
+    const p = document.createElement("p");
+    terminal.appendChild(p);
 
-    for (const msg of messages) {
+    let dots = 0;
 
-        const p = document.createElement("p");
-        terminal.appendChild(p);
+    const interval = setInterval(() => {
+      dots = (dots + 1) % 4;
 
-        let dots = 0;
+      p.textContent = msg + ".".repeat(dots);
+    }, 300);
 
-        const interval = setInterval(() => {
+    await waitRandom();
 
-            dots = (dots + 1) % 4;
+    clearInterval(interval);
 
-            p.textContent = msg + ".".repeat(dots);
-
-        }, 300);
-
-        await waitRandom();
-
-        clearInterval(interval);
-
-        p.textContent = msg + "...";
-    }
+    p.textContent = msg + "...";
+  }
 }
-
-login(
-    "cont2",
-    "Login",
-    "Username",
-    "Email",
-    "Login"
-);
+login("cont2", "Login", "Username", "Email", "Login");
