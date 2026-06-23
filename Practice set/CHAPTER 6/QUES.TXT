@@ -1,6 +1,5 @@
-Write a program to print the marks of a student in an object using for loop
-obj = {Lipsita:98,Harry : 98,Loshit:92}
-write a the program in Q1 using for in loop
-
-write a program to print "try again" until the user enters the correct number
-wrtie a function to find mean of 5 number
+Wite a program using prompt function to take age as a value from the user and use alert function to tell him if he can drive or not
+In 21 Mal Confirm to ask the user if he wantsto see the prompt again
+In the previous question use Consle esror to log the error! if the age entered is negative
+Write a program to change the wit to gogle. com(Redieection) f wser enters a number grester than 4
+Change the backeround of the page to yellos redor any other Color based on user input through prompt
