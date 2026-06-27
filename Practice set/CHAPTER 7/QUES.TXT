@@ -1,6 +1,7 @@
-Write a program to print the marks of a student in an object using for loop
-obj = {Lipsita:98,Harry : 98,Loshit:92}
-write a the program in Q1 using for in loop
-
-write a program to print "try again" until the user enters the correct number
-wrtie a function to find mean of 5 number
+Create a navbar and change the color of its first element to red
+Create a table without tbody Now use "Viwe page source" button to check whether it has tbody or not
+Create an element with 3 children Now change the color of first and last element to green
+Write a javascript code to change background of all <li> tags to cyan
+Which of the following is uded to look for the farthest ancestor that matches a given css selector
+a.matches b.closest  c.contains  d.None of the above
+answer : option b

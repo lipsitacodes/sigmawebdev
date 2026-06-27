@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  list-style: none;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.nav ul {
+  display: flex;
+  gap: 200px;
+  padding: 10px;
+}
+img {
+  width: 50px;
+  padding-left: 0;
+}
+.nav {
+  display: flex;
+  gap: 230px;
+  background-color: peachpuff;
+  border: 7px solid rgb(129, 80, 38);
+  border-radius: 10px;
+}
